@@ -1,6 +1,8 @@
 /*==========  Desktop First Method  ==========*/
 
 #header {
+    width: 50%;
+    float: left;
 }
 
 #container {
@@ -9,8 +11,8 @@
 }
 
 #navigation {
-    float: left;
-    width: 100%;
+  float: right;
+  width: 50%;
 }
 
 #navigation ul li {
@@ -22,16 +24,18 @@
     border-right: 1px solid #fff;
 }
 
+article:nth-child(1) img {
+    width: 100%;
+}
+
 #content-container {
     float: left;
 }
-
-img.main-img {
-    width: 50%;
+#imageContent img{
+    width: 100%;
 }
-
 #footer {
-    text-align: right;
+    text-align: center;
 }
 
 /* Large Devices, Wide Screens */
