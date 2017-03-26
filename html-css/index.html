@@ -5,17 +5,18 @@
         <title>Examen Practico</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
+        <link href="styles/reset.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
         <link href="styles/desktop_first.css" rel="stylesheet">
     </head>
     <body>
-        <div id="container">
-            <header id="header">
+        <main id="container">
+            <header>
                 <h1>
                     UNA WEB [ESTUDIANTE]
                 </h1>
             </header>
-            <nav id="navigation">
+            <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -27,7 +28,7 @@
             <div id="imageContent">
                 <p>  <img src="images/aurora.jpg"/></p>
             </div>
-            <section >  <h2>
+            <section>  <h2>
                     Main Section
                 </h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
@@ -37,7 +38,7 @@
             </section>       
             <section >
                 <h3>Sub-Section Center</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <p class="parrafo">It is a long <b>established</b> fact that a <span class="rojo">reader</span> will be <a href="#">distracted</a> by the <a class="link" href="https://www.google.com/">readable</a> content of a page when looking at its <span class="tacha">layout.</span></p>
                 <p> 
                     <img src="images/panda.jpg"/>
                 </p>
@@ -49,19 +50,13 @@
                 </p>
             </section>
 
-            <aside>
                 <section>
                     <h3>Sub-Section Rigth</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                 <p>
+                        There are many  <span class="rojo">variations</span> of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
                     </p>
-                    <p>
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    </p>
-                </section>
+                
 
-                <section>
                     <h4>Sub-Sub section</h4>
                     <p>
                         The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
@@ -69,15 +64,13 @@
                     <p>
                         <img src="images/panda.jpg"/>  
                     </p>
-                </section>
-                <section>
+
                     <h5>Sub-Sub-Sub section</h5>
                     <p>
                         The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
                     </p>
                 </section>
-            </aside>
-            <footer id="footer">
+            <footer>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -86,6 +79,6 @@
                 </ul>
                 <p>Copyright &copy; UNA, 2016</p>
             </footer>
-        </div>
+        </main>
     </body>
 </html>
