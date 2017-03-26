@@ -48,6 +48,16 @@ section img{
     width: 100%;
 }
 
+footer{
+    position: fixed;
+    background: #9999ff;
+    width: 100%;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
 footer ul{
     display: none;
 }
@@ -87,7 +97,7 @@ footer p{
         display: inline;
         list-style-type: none;
     }
-    nav ul li::after,footer ul li::after{
+   nav ul li:not(:last-child)::after,footer ul li:not(:last-child)::after{
         content: " |";
     }
 
