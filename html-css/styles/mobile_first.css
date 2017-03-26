@@ -1,10 +1,116 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 20-mar-2017, 18:37:52
-    Author     : LENOVO
-*/
+header {
+    width: 100%;
+    float: none;
+}
+header h1{
+    text-align: center;
+}
 
+#imageContent img{
+    width: 100%;
+}
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav{
+    float: none;
+    width: 100%;
+    background: #333;
+}
+
+nav ul{
+    float: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: block;
+    padding-bottom: 5px;
+}
+
+nav ul li::after{
+    content: "";
+}
+
+nav ul li a {
+    color: #ffffff;
+}
+
+section{
+    float: none;
+    margin-right: 0%;
+    width: 100%;
+}
+
+section img{
+    width: 100%;
+}
+
+footer ul{
+    display: none;
+}
+
+nav ul li:hover{
+    background: #A4A4A4;
+}
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+}
+@media only screen and (min-width : 992px) {
+    header {
+        width: 50%;
+        float: left;
+    }
+
+    header h1{
+        text-align: left;
+    }
+
+    nav{
+        float: right;
+        width: 50%;
+        background: none;
+    }
+
+    nav ul li a {
+        color: #333;
+    }
+
+    nav ul{
+        float: right;
+    }
+    nav ul li{
+        display: inline;
+        list-style-type: none;
+    }
+    nav ul li::after,footer ul li::after{
+        content: " |";
+    }
+
+    section{
+        float: left;
+        margin-right: 1%;
+        width: 32%;
+    }
+    footer ul li{
+        text-align: center;
+        display: inline;
+    }
+
+    footer {
+        text-align: center;
+    }
+    footer ul {
+        text-align: center;
+        display: inline;
+    }
+    footer p{
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
