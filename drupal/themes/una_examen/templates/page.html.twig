@@ -104,15 +104,16 @@
 
         <div class="row">
 
-            {# Header #}
-            {% if page.carousel %}
-                {% block carousel %}
-                    <div class="col-sm-12" >
-                        {{ page.carousel }}
-                    </div>
-                {% endblock %}
+            {% if is_front %}
+                {# Header #}
+                {% if page.carousel %}
+                    {% block carousel %}
+                        <div id="carousel_inicio" class="col-sm-12" >
+                            {{ page.carousel }}
+                        </div>
+                    {% endblock %}
+                {% endif %}
             {% endif %}
-
             {# Header #}
             {% if page.header %}
                 {% block header %}
